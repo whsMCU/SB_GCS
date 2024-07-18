@@ -176,7 +176,7 @@ namespace SB_GCS
             //attitude_graph.XAxis.ResetAutoScale(attitude_graph, CreateGraphics());
             //attitude_graph.YAxis.ResetAutoScale(attitude_graph, CreateGraphics());
 
-            //zedGraphControl1.Refresh();
+            zedGraphControl1.Refresh();
 
             attitude_graph.AxisChange();
         }

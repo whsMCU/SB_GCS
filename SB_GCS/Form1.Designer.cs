@@ -50,6 +50,7 @@
             this.text_pitch = new System.Windows.Forms.TextBox();
             this.text_yaw = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.groupBox_RxFormat.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -236,11 +237,28 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Location = new System.Drawing.Point(660, 285);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(509, 325);
+            this.zedGraphControl1.TabIndex = 35;
+            this.zedGraphControl1.UseExtendedPrintDialog = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 707);
+            this.Controls.Add(this.zedGraphControl1);
             this.Controls.Add(this.groupBox_RxFormat);
             this.Controls.Add(this.text_yaw);
             this.Controls.Add(this.CB_Enable_Terminal);
@@ -291,6 +309,7 @@
         private System.Windows.Forms.TextBox text_pitch;
         private System.Windows.Forms.TextBox text_yaw;
         private System.Windows.Forms.Timer timer1;
+        private ZedGraph.ZedGraphControl zedGraphControl1;
     }
 }
 
